@@ -1,0 +1,5 @@
+# ignore eggs, build dist, venv
+.eggs
+build
+dist
+venv
