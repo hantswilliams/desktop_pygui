@@ -2,7 +2,7 @@
 
 Creating local Apps (.exe/.app) with Python in 2024? 🤔
 
-Over the past weekend I explored a few different tools for how to create a local, standalone desktop applications (.exe, .app) with Python for a upcoming hospital project where we will likely need to run things locally, windows server, no internet, no external connections. 
+Over the past weekend I explored a few different tools for how to create a local, standalone desktop applications (.exe, .app) with Python for a upcoming hospital project where we will likely need to run things locally, windows server, no internet, no external connections. Repo: https://github.com/hantswilliams/desktop_pygui 
 
 Long story short, seems like the easiest way in 2024 to do this is using a python packaged  pyinstaller - works for mac + linux + windows. Main drawback is you can only compile for the OS you are currently on (e.g., if im running this on my mac, I can only compile for mac). Also checked out py2app and py2exe, but my personal preference is pyinstaller as of right now.
 

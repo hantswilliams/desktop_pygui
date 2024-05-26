@@ -1,4 +1,6 @@
-# To create an executable file for a python script, you can use pyinstaller.:
+# To create an executable file for a python script, you can use 
+
+## Pyinstaller.:
 
 1. Install pyinstaller: `pip install pyinstaller` in either your global environment or a virtual environment.
 
@@ -16,3 +18,18 @@
         - `--icon` - adds the icon to the app
             - for mac apps, you need to convert the icon to a .icns file, you can use an online converter for this.
 
+
+## Flaskwebgui: 
+
+1. Install flaskwebgui: `pip install flaskwebgui`
+
+2. For creating the flask app, first run with just python to make sure it works: 
+    - `./flaskapp1/flask_example.py`
+
+3. Then after conforming that, to turn it into a app file with flaskwebgui:
+    - `pyinstaller -w -F --add-data="templates:templates" --add-data="static:static" flask_example.py`
+    - `pyinstaller --onedir --noconsole --add-data="templates:templates" --add-data="static:static" flask_example.py`
+            - `-w` - no console
+            - `-F` - one file
+            - `--add-data` - adds the templates and static folders to the app
+                - for this, we have the templates and static folders in the same directory as the script, so we use `.` to indicate that
